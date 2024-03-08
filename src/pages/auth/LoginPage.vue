@@ -3,7 +3,7 @@
     <q-header class="bg-white q-px-xl q-py-md">
       <q-toolbar>
         <q-avatar size="xs">
-          <img src="/src/assets/logo/cashup.png" />
+          <img src="/src/assets/logo/cashup.svg" />
         </q-avatar>
         <q-toolbar-title><span class="text-black q-ml-xs text-bold text-h5">CashUp</span></q-toolbar-title>
         <q-tabs v-model="nav" class="text-black gt-sm">
