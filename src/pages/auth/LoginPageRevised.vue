@@ -26,8 +26,8 @@
         </div>
       </div>
     </q-header>
-    <div class="column login q-pt-xl ">
-      <div class="col-sm-12 col-md-12 q-pt-md">
+    <div class="column login">
+      <div class="col-sm-12 col-md-12">
         <!-- !For Desktop -->
         <div class="text-h4 text-weight-medium q-mb-md text-center gt-xs">
           Log in to your account
