@@ -2,9 +2,7 @@
   <div>
     <q-header class="bg-white q-px-xl q-py-md">
       <q-toolbar>
-        <q-avatar size="xs">
-          <img src="/src/assets/logo/cashup.svg" />
-        </q-avatar>
+        <img src="/src/assets/logo/cashup.svg" />
         <q-toolbar-title><span class="text-black q-ml-xs text-bold text-h5">CashUp</span></q-toolbar-title>
         <q-tabs v-model="nav" class="text-black gt-sm">
           <q-tab name="home" label="Home" no-caps />
