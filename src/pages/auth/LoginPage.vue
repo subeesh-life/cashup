@@ -4,7 +4,7 @@
     <q-header class="bg-white">
       <div class="row flex items-center q-pa-lg">
         <div class="col-xs-6 col-md-2 flex items-center">
-          <img src="../auth/cashup.svg" />
+          <img src="../auth/assets/cashup.svg" />
           <span class="text-black q-ml-sm text-bold text-h5 ellipsis">CashUp</span>
         </div>
         <div class="col-md-8 gt-sm">
@@ -125,19 +125,19 @@
         </div>
       </div>
 
-      <div class="form q-pa-lg q-gutter-y-md">
+      <div class="form q-pa-lg q-gutter-y-sm">
         <div class="row flex justify-center">
           <div class="col-xs-12 col-md-4">
             <label for="email" class="text-grey-9">Email</label>
-            <q-input class="q-mt-xs" type="email" dense outlined id="email" v-model="email"
-              placeholder="Enter your email" />
+            <q-input dense autofocus outlined class="q-mt-xs" type="email" id="email" v-model="email"
+              placeholder="Enter your email" :rules="[val => !!val || 'Email is required']" />
           </div>
         </div>
         <div class="row flex justify-center">
           <div class="col-xs-12 col-md-4">
             <label for="password" class="text-grey-9">Password</label>
-            <q-input class="q-mt-xs" dense outlined id="password" v-model="password" :type="isPwd ? 'password' : 'text'"
-              placeholder="Enter your password">
+            <q-input dense outlined class="q-mt-xs" id="password" v-model="password" :type="isPwd ? 'password' : 'text'"
+              placeholder="Enter your password" :rules="[val => !!val || 'Password is required']">
               <template v-slot:append>
                 <q-icon :name="isPwd ? 'visibility_off' : 'visibility'" class="cursor-pointer"
                   @click="isPwd = !isPwd" />
@@ -156,7 +156,8 @@
         </div>
         <div class="row flex justify-center">
           <div class="col-xs-12 col-md-4">
-            <q-btn no-caps color="primary" label="Sign In" class="fit"></q-btn>
+            <q-btn :disabled="email.length == 0 || password.length == 0" no-caps color="primary" label="Sign In"
+              class="fit"></q-btn>
           </div>
         </div>
         <div class="row flex justify-center">
@@ -164,9 +165,11 @@
             <div class="text-grey-7 text-center q-pt-md">
               Don't have an account?
               <span class="text-primary cursor-pointer">Sign up</span>
+
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </q-page>

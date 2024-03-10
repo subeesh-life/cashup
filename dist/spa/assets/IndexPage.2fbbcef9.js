@@ -1,0 +1,1 @@
+import{_ as e,l as t,G as c,H as s}from"./index.7a7392f7.js";const o={},n={class:"flex items-center justify-center window-height"},r=s("h5",null,"Welcome to click up",-1),_=[r];function a(i,l){return t(),c("div",n,_)}var f=e(o,[["render",a]]);export{f as default};
